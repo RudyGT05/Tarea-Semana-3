@@ -1,23 +1,19 @@
-﻿string usu, contra;
+﻿int num;
 try
 {
-    Console.WriteLine("Ingrese el usuario: ");
-    usu = (Console.ReadLine());
-    Console.WriteLine("Ingrese la contraseña: ");
-    contra = (Console.ReadLine());
+    Console.WriteLine("Ingrese el numero a examinar: ");
+    num = int.Parse(Console.ReadLine());
 
 
+    if (num % 2 == 0) { 
 
-    if (usu == "Rudy" && contra == "1234") { 
-
-    Console.WriteLine("Bienvenido, Rudy ");
+    Console.WriteLine("El numero es par");
 }
-    else {
-        Console.WriteLine("Contraseña incorrecta, vuelva a intentarlo");
+    else {Console.WriteLine("El numero es impar");
     }
 }
 catch (Exception ex)
 {
-    Console.WriteLine(ex.Message);
+    Console.WriteLine("Solo Se pueden ingresar números "+ex.Message);
 }
 
