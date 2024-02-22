@@ -1,21 +1,23 @@
-﻿double precio, totalf, des;
+﻿string usu, contra;
 try
 {
-    Console.WriteLine("Ingrese el precio del producto: ");
-    precio = double.Parse(Console.ReadLine());
+    Console.WriteLine("Ingrese el usuario: ");
+    usu = (Console.ReadLine());
+    Console.WriteLine("Ingrese la contraseña: ");
+    contra = (Console.ReadLine());
 
 
-    if (precio >= 100) { 
-        des = precio * 0.10;
-    totalf = precio - des;
-    Console.WriteLine("Con el descuento aplicado su total es de: " + totalf);
+
+    if (usu == "Rudy" && contra == "1234") { 
+
+    Console.WriteLine("Bienvenido, Rudy ");
 }
     else {
-        Console.WriteLine("Su precio final es: " + precio);
+        Console.WriteLine("Contraseña incorrecta, vuelva a intentarlo");
     }
 }
 catch (Exception ex)
 {
-    Console.WriteLine("Solo puedes ingresar números "+ex.Message);
+    Console.WriteLine(ex.Message);
 }
 
