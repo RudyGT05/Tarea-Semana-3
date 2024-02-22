@@ -1,28 +1,29 @@
 ﻿int opcion;
 try
 {
-    Console.WriteLine("Elije el idioma que deseas");
-    Console.WriteLine("1. Español");
-    Console.WriteLine("2. Inglés");
-    Console.WriteLine("3. Francés");
+    Console.WriteLine("Ingresa tu nota para evaluar tu desempeño");
+ 
 
     
     opcion = int.Parse(Console.ReadLine());
 
     switch (opcion)
     {
-        case 1:
-            Console.WriteLine("Bienvenido Que la pases bien");
+        case >=60 and <=69:
+            Console.WriteLine("No aprobatoria");
             break;
-        case 2:
-            Console.WriteLine("Welcome, have fun");
+        case >=70 and <=79:
+            Console.WriteLine("Aprobatoria");
             break;
-        case 3:
-            Console.WriteLine("Bienvenue, passez un bon moment");
+        case >=80 and <=89:
+            Console.WriteLine("Notable");
+            break;
+        case >= 90 and <= 100:
+            Console.WriteLine("Sobresaliente");
             break;
        
         default:
-            Console.WriteLine("Numero no disponible,numéro non disponible, number not avaliable");
+            Console.WriteLine("La nota no puede ser evaludad");
             break;
     }
 
