@@ -1,10 +1,10 @@
 ﻿int opcion;
 try
 {
-    Console.WriteLine("Elije la opcion que quieres");
-    Console.WriteLine("1. Lavado de Auto");
-    Console.WriteLine("2. Cambio de Aceite");
-    Console.WriteLine("3. Revision Mecanica");
+    Console.WriteLine("Elije el idioma que deseas");
+    Console.WriteLine("1. Español");
+    Console.WriteLine("2. Inglés");
+    Console.WriteLine("3. Francés");
 
     
     opcion = int.Parse(Console.ReadLine());
@@ -12,17 +12,17 @@ try
     switch (opcion)
     {
         case 1:
-            Console.WriteLine("Tienes que pagar Q40");
+            Console.WriteLine("Bienvenido Que la pases bien");
             break;
         case 2:
-            Console.WriteLine("Tienes que pagar Q500");
+            Console.WriteLine("Welcome, have fun");
             break;
         case 3:
-            Console.WriteLine("Tienes que Pagar Q200");
+            Console.WriteLine("Bienvenue, passez un bon moment");
             break;
        
         default:
-            Console.WriteLine("Numero no disponible");
+            Console.WriteLine("Numero no disponible,numéro non disponible, number not avaliable");
             break;
     }
 
