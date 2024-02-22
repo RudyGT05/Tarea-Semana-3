@@ -1,21 +1,17 @@
-﻿int prim, segun, tern;
+﻿int edad;
 try
 {
-    Console.WriteLine("Ingrese el primer numero: ");
-    prim = int.Parse(Console.ReadLine());
-    Console.WriteLine("Ingrese el segundo numero: ");
-    segun = int.Parse(Console.ReadLine());
-    Console.WriteLine("Ingrese el tercer numero: ");
-    tern = int.Parse(Console.ReadLine());
-    if (prim > segun && prim > tern)
-        Console.WriteLine("El mayor es: " + prim);
-    else if (segun > prim && segun > tern)
-        Console.WriteLine("El mayor es: " + segun);
-    else if (tern > segun && tern > prim)
-        Console.WriteLine("El mayor es: " + tern);
+    Console.WriteLine("Ingrese su edad: ");
+    edad = int.Parse(Console.ReadLine());
+
+    if (edad >= 18)
+        Console.WriteLine("Bienvenido");
+    else 
+        Console.WriteLine("No puedes ingresar");
+    
 }
 catch (Exception ex)
 {
-    Console.WriteLine("Solo se permiten numeros " + ex.Message);
+    Console.WriteLine("Solo puedes ingresar números "+ex.Message);
 }
 
