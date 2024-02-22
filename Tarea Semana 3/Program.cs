@@ -1,19 +1,22 @@
-﻿int num;
+﻿int num, edad;
+
 try
 {
-    Console.WriteLine("Ingrese el numero a examinar: ");
+    Console.WriteLine("Ingrese su edad: ");
+    edad = int.Parse(Console.ReadLine());
+    Console.WriteLine("Ingrese el monto deseado: ");
     num = int.Parse(Console.ReadLine());
 
 
-    if (num % 2 == 0) { 
+    if (edad >= 60 || num <= 5000) { 
 
-    Console.WriteLine("El numero es par");
+    Console.WriteLine("Su prestamo ha sido aprobado");
 }
-    else {Console.WriteLine("El numero es impar");
+    else {Console.WriteLine("Lamentablemente su prestamo ha sido rechazado");
     }
 }
 catch (Exception ex)
 {
-    Console.WriteLine("Solo Se pueden ingresar números "+ex.Message);
+    Console.WriteLine("Solo se pueden escribir numeros "+ ex.Message);
 }
 
